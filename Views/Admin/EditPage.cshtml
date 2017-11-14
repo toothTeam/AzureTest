@@ -1,0 +1,12 @@
+﻿@model SoloduhaMVC.Models.Content.Content
+
+@{
+    ViewBag.Title = "EditPage";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.TextAreaFor(m => m.Information)
+    <br />
+    <input type="submit" value="Сохранить изменения" class="submitBtn" />
+}

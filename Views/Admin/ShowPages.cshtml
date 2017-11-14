@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SoloduhaMVC.Models.Content.Content>
+
+@{
+    ViewBag.Title = "ShowPages";
+}
+
+<div class="pagesList">
+@foreach (var page in Model)
+{
+    <p>@page.Pagename - @Html.ActionLink("Редактировать", "EditPage", "Admin", new { pageid = page.Id }, null)</p>
+}
+    </div>

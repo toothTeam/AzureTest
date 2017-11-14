@@ -1,0 +1,15 @@
+﻿@model SoloduhaMVC.Models.User
+
+@{
+    ViewBag.Title = "EditUser";
+}
+
+@using (Html.BeginForm())
+{
+    <p>Логин: </p>
+    @Html.TextBoxFor(m => m.Login)
+    <br />
+    <p>Пароль: </p>
+    @Html.TextBoxFor(m => m.Password)
+    <input type="submit" value="Сохранить изменения" class="submitBtn" />
+}

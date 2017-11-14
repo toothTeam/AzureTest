@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SoloduhaMVC.Models.User>
+
+@{
+    ViewBag.Title = "ShowUsers";
+}
+
+<div class="pagesList">
+    @foreach (var user in Model)
+    {
+        <p>@user.Login - @Html.ActionLink("Редактировать", "EditUser", "Admin", new { userid = user.Id }, null) - @Html.ActionLink("Удалить", "DeleteUser", "Admin", new { userid = user.Id }, null) - @user.Password</p>
+    }
+</div>

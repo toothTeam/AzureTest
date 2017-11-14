@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Styles/main.css")" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="~/Images/logo.png" />
+        </div>
+        <div class="accountMenu">
+            @Html.Partial("_accountMenu")
+        </div>
+    </div>
+    <div class="menu">
+        @Html.ActionLink("Главная", "Main", "Main")
+        @Html.ActionLink("Биография", "Biography", "Main")
+        @Html.ActionLink("Дискография", "Music", "Main")
+        @Html.ActionLink("Галерея", "Gallery", "Main")
+        @if(Roles.Provider.IsUserInRole(User.Identity.Name, "admin")) 
+        {
+        @Html.ActionLink("Админка", "Menu", "Admin")
+        }
+    </div>
+    <div class="main">
+        @RenderBody()
+    </div>
+
+    <div class="footer">
+        <div class="footer-info">
+            <p>&copy; Александр Солодуха @DateTime.Now.Year</p>
+            <p>ВНИМАНИЕ! Сайт не рекомендован к просмотру лицам, не достигших 18 лет, беременным женщинами и людям со слабой психикой.</p>
+        </div>
+        <div class="footer-menu">
+            @Html.ActionLink("Главная", "Main", "Main")
+            @Html.ActionLink("Биография", "Biography", "Main")
+            @Html.ActionLink("Дискография", "Music", "Main")
+            @Html.ActionLink("Галерея", "Gallery", "Main")
+
+        </div>
+        <div class="footer-icons">
+            <a href="#">
+                <img src="~/Images/facebook.png" /></a>
+            <a href="#">
+                <img src="~/Images/ok.png" /></a>
+            <a href="#">
+                <img src="~/Images/vk.png" /></a>
+            <a href="#">
+                <img src="~/Images/twitter.png" /></a>
+        </div>
+    </div>
+</body>
+</html>

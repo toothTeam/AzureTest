@@ -1,0 +1,166 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../Images/green_cup.png);
+}
+
+div.head {
+    width: 1100px;
+    margin: 10px auto;
+    border-bottom: 1px solid white;
+    padding-bottom:10px;
+    overflow:hidden;
+}
+
+div.menu {
+    width: 1100px;
+    margin: 0 auto;
+    text-align:center;
+    border-bottom: 1px solid white;
+    font-size:20px;
+    padding:20px 0;
+}
+div.menu a{
+    padding:20px;
+    color:white;
+    text-decoration:none;
+}
+div.menu a:hover{
+    text-decoration:underline;
+}
+
+div.main {
+    width: 1100px;
+    margin: 20px auto;
+}
+
+div.footer {
+    width: 1100px;
+    margin: 20px auto;
+}
+
+div.footer-info, div.footer-menu, div.footer-icons {
+    width: 33%;
+    float: left;
+}
+
+    div.footer-menu a {
+        color:white;
+    }
+
+div.content {
+    width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+div.video {
+    float: left;
+    width: 620px;
+    margin-top: 25px;
+}
+
+div.schedule {
+    width: 300px;
+    float: right;
+}
+
+    div.schedule h2 {
+        text-align: center;
+        color: white;
+    }
+
+p.small {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+.line img {
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+p.pBio {
+    color: white;
+}
+
+img.left {
+    float: left;
+}
+
+img.right {
+    float: right;
+}
+
+div.album {
+    text-align: center;
+    color: white;
+    margin-bottom:20px;
+}
+
+    div.album img {
+        width: 400px;
+        height: 400px;
+    }
+
+    div.album h2 {
+        text-align: center;
+        color: white;
+        margin-bottom:5px;
+    }
+
+ol li {
+    cursor: pointer;
+    text-align: center;
+}
+
+.audiojs {
+    margin: 0 auto;
+}
+p.audio {
+    color:black;
+}
+p.notAuthenticated {
+    color:red;
+}
+div.accountMenu {
+    float:right;
+}
+div.accountMenu li{
+    list-style-type:none;
+    color:white;
+    float:left;
+}
+div.accountMenu li a{
+    color:white;
+    padding-left:5px;
+}
+div.logo {
+    float:left;
+}
+textarea#Information {
+    width:1100px;
+    min-height:500px;
+}
+
+div.adminMenu {
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+    div.adminMenu a {
+        color:white;
+    }
+
+div.pagesList p{
+    text-align:center;
+    font-size:18px;
+}

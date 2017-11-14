@@ -1,0 +1,19 @@
+﻿@if (HttpContext.Current.User.Identity.IsAuthenticated)
+{
+    <ul>
+        <li>Hello, @HttpContext.Current.User.Identity.Name
+        </li>
+        <li>
+            @Html.ActionLink("Выйти", "logoff", "account")
+        </li>
+    </ul>
+}
+else
+{
+    <ul>
+        <li>@Html.ActionLink("Войти", "login", "account")</li>
+        <li>
+            @Html.ActionLink("Зарегистрироваться", "registration", "account")
+        </li>
+    </ul>
+}
